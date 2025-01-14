@@ -15,7 +15,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
 </head>
 
-<body>
+<body class="fixed-top-nav">
 
   <!-- Header -->
   <header>
@@ -45,46 +45,61 @@
   <!-- Content -->
   <div class="container mt-5">
     <div class="post">
-      <div class="header-bar">
-        <h1>Projects</h1>
-      </div>
+      <header class="post-header">
+        <h1 class="post-title">Projects</h1>
+      </header>
 
-      <ul class="post-list">
-        <!-- Project 1 -->
-        <li class="project">
-          <h3><a class="post-title" href="/projects/project1.html">Wage inequality between and within sociodemographic groups</a></h3>
-          <!-- <p class="post-meta">Published: 2022</p> -->
-          <p>This project is extracted from my doctoral thesis. I focus on a phenomenon that has received little attention: why do socio-demographic groups with higher average wages also exhibit greater internal wage dispersion? For instance, while it is well known that men, on average, earn higher wages than women, it is less known that men also experience higher levels of internal inequality. In other words, men's wages are more unequal among themselves than women's wages are among women. This pattern is not only true for gender-based wage inequalities but also extends to other variables such as education level, age groups, and so on. The question is: why? Are the two phenomena related? I claim that yes and identify some of the mechanisms behind this phenomenon. [R&R]</p>
-        </li>
+      <article>
+        <div class="projects">
+          <ol class="bibliography">
+            <!-- Project 1 -->
+            <li>
+              <div class="card">
+                <div class="card-body">
+                  <h3><a href="/projects/project1.html">Wage inequality between and within sociodemographic groups</a></h3>
+                  <p>This project explores why groups with higher average wages also exhibit greater internal wage dispersion. [R&R]</p>
+                </div>
+              </div>
+            </li>
 
-        <!-- Project 2 -->
-        <li class="project">
-          <h3><a class="post-title" href="/projects/project2.html">Predictability of the life course</a></h3>
-          <!-- <p class="post-meta">Published: Feb 15, 2023</p> -->
-          <p>Even though sociological theories claim that individuals' lives are structured by several factors like gender, social class, education and so on, literature shows that individuals' life courses are extremely hard to predict ex ante? In this interdisciplinary collaborative project we explore some of the origins of this unpredictability. [More to come]</p>
-        </li>
+            <!-- Project 2 -->
+            <li>
+              <div class="card">
+                <div class="card-body">
+                  <h3><a href="/projects/project2.html">Predictability of the life course</a></h3>
+                  <p>An interdisciplinary project exploring why individuals' life courses are difficult to predict. [More to come]</p>
+                </div>
+              </div>
+            </li>
 
-        <!-- Project 3 -->
-        <li class="project">
-          <h3><a class="post-title" href="/projects/project3.html">Inequality and climate change.</a></h3>
-          <!-- <p class="post-meta">Published: Mar 10, 2023</p> -->
-          <p>In this new project at LABSS, we explore the relationships between inequality and CO2 emissions. Counterintuitively, inequality can have beneficial impact in fighting climate change which suggests that reducing simultaneously inequality and CO2 emissions may turn out to be difficult. We analyze the conditions under which this is possible.</p>
-        </li>
+            <!-- Project 3 -->
+            <li>
+              <div class="card">
+                <div class="card-body">
+                  <h3><a href="/projects/project3.html">Inequality and climate change</a></h3>
+                  <p>Analyzing how inequality can impact CO2 emissions and climate policies.</p>
+                </div>
+              </div>
+            </li>
 
-        <!-- Project 4 -->
-        <li class="project">
-          <h3><a class="post-title" href="/projects/project4.html">Raymond Boudon's approach to simulation</a></h3>
-          <!-- <p class="post-meta">Published: Apr 20, 2023</p> -->
-          <p>In June 2024, I had the privilege of being invited to participate in a symposium on the work of Raymond Boudon (an important French sociologist of the 20th century whose work is often unknown or misunderstood), and its lessons for contemporary sociology (<a href="https://www.gemass.fr/wp-content/uploads/2024/06/20240613-Gemass-Symposium-Programme_web.pdf">see the program here</a>), featuring an impressive panel of speakers. I discussed formal models in Boudon's work, and I am currently preparing a paper based on this presentation, which will be published in a collective volume.</p>
-        </li>
-      </ul>
-
+            <!-- Project 4 -->
+            <li>
+              <div class="card">
+                <div class="card-body">
+                  <h3><a href="/projects/project4.html">Raymond Boudon's approach to simulation</a></h3>
+                  <p>Study on Raymond Boudon's formal models and their relevance to contemporary sociology.</p>
+                </div>
+              </div>
+            </li>
+          </ol>
+        </div>
+      </article>
     </div>
   </div>
 
   <!-- Footer -->
   <footer class="fixed-bottom">
-    <div class="container mt-0 text-center">
+    <div class="container text-center">
       &copy; 2024 Lucas Sage. Powered by <a href="http://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme.
     </div>
   </footer>
