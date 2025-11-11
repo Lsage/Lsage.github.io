@@ -4,14 +4,14 @@
 <head>
   <script id="Cookiebot" src="https://consent.cookiebot.com/uc.js" data-cbid="5a769aae-53a4-42da-a2af-f579832b0b40" type="text/javascript" async></script>
   <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-83TT9T66SW"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-83TT9T66SW');
-</script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-83TT9T66SW"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-83TT9T66SW');
+  </script>
+  
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -19,11 +19,9 @@
   <title>Lucas Sage | projects</title>
   <meta name="description" content="Lucas Sage's Academic Site; Analytical Sociology, Agent-Based Models">
 
-  <!-- Open Graph -->
-
   <!-- Bootstrap & MDB -->
   <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet" integrity="sha512-MoRNloxbStBcD8z3M/2BmnT+rg4IsMxPkXaGh2zD6LGNNFE80W3onsAhRcMAMrSoyWL9xD7Ert0men7vR8LUZg==" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css" integrity="sha512-RO38pBRxYH3SoOprtPTD86JFOclM51/XTIdEPh5j8sj4tp8jmQIx26twG52UaLi//hQldfrh7e51WzP9wuP32Q==" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css" integrity="sha512-RO38pBRxYH3SoOprtPTD86JFOclM51/XTIdEPh5j8sj4tp8jmQIx26twG52UaLi//hQldfrh7e51WzP9wuP32Q==" crossorigin="anonymous">
 
   <!-- Fonts & Icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous">
@@ -33,17 +31,15 @@
   <!-- Styles -->
   <link rel="shortcut icon" href="/assets/img/favicon.ico">
   <link rel="stylesheet" href="/assets/css/main.css">
-
-  <link rel="canonical" href="/projects/">
 </head>
 
-<body class="fixed-top-nav ">
+<body class="fixed-top-nav">
 
   <!-- Header -->
   <header>
     <nav id="navbar" class="navbar navbar-light navbar-expand-sm fixed-top">
       <div class="container">
-        <a class="navbar-brand title font-weight-lighter" href="https://lsage.github.io/">
+        <a class="navbar-brand title font-weight-lighter" href="/">
           <span class="font-weight-bold">Lucas</span> Sage
         </a>
         <button class="navbar-toggler collapsed ml-auto" type="button" data-toggle="collapse" data-target="#navbarNav">
@@ -55,7 +51,7 @@
         <div class="collapse navbar-collapse text-right" id="navbarNav">
           <ul class="navbar-nav ml-auto flex-nowrap">
             <li class="nav-item"><a class="nav-link" href="/">about</a></li>
-            <li class="nav-item active"><a class="nav-link" href="/projects/">projects</a></li>
+            <li class="nav-item active"><a class="nav-link" href="/projects/">projects<span class="sr-only">(current)</span></a></li>
             <li class="nav-item"><a class="nav-link" href="/publications/">publications</a></li>
             <li class="nav-item"><a class="nav-link" href="/teaching/">teaching</a></li>
           </ul>
@@ -74,41 +70,103 @@
       <article>
         <div class="publications">
           <ol class="bibliography">
+            
+            <!-- Project 1: Wage Inequality -->
             <li>
               <div class="card">
                 <div class="card-body">
-                  <div class="title">Wage inequality between and within sociodemographic groups</div>
-                  <p>This project is extracted from my doctoral thesis. I focus on a phenomenon that has received little attention: why do socio-demographic groups with higher average wages also exhibit greater internal wage dispersion? For instance, while it is well known that men, on average, earn higher wages than women, it is less known that men also experience higher levels of internal inequality. In other words, men's wages are more unequal among themselves than women's wages are among women. This pattern is not only true for gender-based wage inequalities but also extends to other variables such as education level, age groups, and so on. The question is: why? Are the two phenomena related? I claim that they are and identify some of the mechanisms behind this phenomenon. [R&R]</p>
-                  <!--<a href="/projects/project1.html" class="btn btn-sm z-depth-0" role="button" target="_blank">Read More</a>-->
+                  <div class="title">Wage Inequality and Labor Market Sorting</div>
+                  <p class="project-origin"><em>Core work from my PhD research</em></p>
+                  
+                  <p>A central puzzle in labor market research is understanding why certain sociodemographic groups—older workers, the highly educated, white men—are not only better paid on average but also show much greater internal wage variation. This overrepresentation at the top of the wage distribution hints at deeper structural processes at work.</p>
+                  
+                  <p>My research explores how workers sort into firms and occupations in ways that amplify existing advantages. I show that those who already have labor market advantages tend to end up in the highest-paying positions, while the disadvantaged cluster in lower-wage opportunities. This sorting mechanism doesn't just create inequality between groups—it also drives inequality within them. Using administrative data, I quantify how much of wage inequality can be attributed to this sorting process by comparing actual wage distributions to counterfactual scenarios where sorting is artificially eliminated.</p>
+                  
+                  <p>I'm also developing an agent-based model to understand how social networks shape labor market sorting. The model examines two key mechanisms: how workers' wage expectations are influenced by their peers, and how job information circulates through networks with varying levels of homophily. By calibrating the model on real-world distributions, I explore under what conditions social networks generate the empirical patterns of sorting and inequality we observe.</p>
+                  
+                  <p>A related strand of this work examines wage trajectories over workers' early careers. Conventional wisdom and major stratification theories predict that initial advantages should compound over time—those who start high should pull further ahead. Yet empirical studies consistently find the opposite: workers with higher starting wages appear to experience slower wage growth. I demonstrate that this paradox stems from a widespread methodological issue in how researchers model wage trajectories. When properly accounting for the statistical properties of longitudinal data, the evidence actually supports the theoretical prediction: early advantages do accumulate, consistent with both cumulative advantage and human capital frameworks.</p>
+                  
+                  <p><strong>Related papers:</strong> Three papers in various stages (working papers and revise & resubmit).</p>
                 </div>
               </div>
             </li>
+
+            <!-- Project 2: Luck and Predictability -->
             <li>
               <div class="card">
                 <div class="card-body">
-                  <div class="title">Starting high to finish low? Reassessing evidence on early career wage trajectories.</div>
-                  <!--<a href="/projects/project1.html" class="btn btn-sm z-depth-0" role="button" target="_blank">Read More</a>-->
+                  <div class="title">Luck and the (Un)predictability of the Life Course</div>
+                  
+                  <p>To what extent are life outcomes predictable? And what role does luck—unexpected, random events—play in shaping life trajectories? These questions sit at the intersection of sociological theory, which increasingly recognizes the importance of chance in achievement, and empirical research, which finds that many life outcomes are surprisingly hard to forecast.</p>
+                  
+                  <p>Our work in this area takes multiple approaches to understanding predictability and randomness in the life course. One strand examines whether there exist deep, learnable patterns in how lives unfold across multiple domains—education, employment, health, family formation, and so on. Drawing inspiration from how foundation models in AI learn general patterns from large datasets, we investigate whether similar models can capture the structured nature of life sequences. Using comprehensive population registry data, we test whether a model trained on entire life trajectories can perform well on specific predictive tasks, such as forecasting fertility decisions. The results suggest that there may indeed be general patterns across interconnected life domains that such models can exploit.</p>
+                  
+                  <p>Another strand develops methods for representing entire social networks at the population scale. Working with the full network of a country's population presents both opportunities and technical challenges. We've worked on techniques for creating meaningful representations of these massive, multi-layered, time-evolving networks that can then be used to improve predictions across a range of demographic and social outcomes.</p>
+                  
+                  <p>We're also contributing to a broader theoretical synthesis that brings together several literatures: sociological theory on the role of luck in achievement, empirical work on the unpredictability of life outcomes, and causal studies that estimate the effects of random life events. This review aims to provide a unified framework for understanding how chance shapes life trajectories.</p>
+                  
+                  <p>Finally, we're involved in a project that directly confronts people's subjective expectations about their own futures with what actually happens to them. By asking individuals to predict their own life outcomes and then comparing these predictions to reality, we gain insight into both the limits of personal foresight and the role of unexpected events.</p>
+                  
+                  <p><strong>Related papers:</strong> Four papers including a review article, working papers, and collaborative projects.</p>
+                  
+                  <p><strong>Collaborators:</strong> 
+                    <a href="https://arnoutvanderijt.com" target="_blank">Arnout van de Rijt</a>, 
+                    <a href="https://www3.cs.stonybrook.edu/~skiena/" target="_blank">Steven Skiena</a>, 
+                    <a href="https://tomemery.eu" target="_blank">Tom Emery</a>, 
+                    Tanzir Pial, 
+                    <a href="https://amacanovic.github.io" target="_blank">Ana Macanovic</a>, 
+                    <a href="https://www.fabriziobernardi.net/about/" target="_blank">Fabrizio Bernardi</a>, 
+                    Dakota Handzlik, 
+                    <a href="https://www.williamfoley.net/home" target="_blank">William Foley</a>, 
+                    <a href="https://f-hafner.github.io" target="_blank">Flavio Hafner</a>
+                  </p>
                 </div>
               </div>
             </li>
+
+            <!-- Project 3: Inequality and Climate -->
             <li>
               <div class="card">
                 <div class="card-body">
-                  <div class="title">Predictability of the life course</div>
-                  <p>Even though sociological theories claim that individuals' lives are structured by several factors like gender, social class, education and other dimensions, recent research shows that individuals' life courses are extremely hard to predict ex ante? We dig into the origins of this unpredictability from different angles in several of projects. [More to come]</p>
-                  <!--<a href="/projects/project2.html" class="btn btn-sm z-depth-0" role="button" target="_blank">Read More</a>-->
+                  <div class="title">Inequality and Collective Climate Action</div>
+                  
+                  <p>Addressing climate change requires unprecedented levels of collective action and cooperation. The relationship between inequality and climate action is theoretically and empirically ambiguous. On one hand, there are reasons to believe inequality might have beneficial effects on aggregate emissions. On the other hand, inequality may fundamentally undermine our capacity to cooperate toward shared environmental goals—when people perceive that burdens are distributed unfairly, they become less willing to support climate policies or make personal sacrifices.</p>
+                  
+                  <p>These competing perspectives raise a puzzle: when does inequality help or hinder collective climate action? We argue that the answer depends critically on how inequality is perceived. The same distribution of resources can be seen as fair or unfair depending on its origin—whether it arose through luck, merit, or other processes. Our experimental work examines how these perceptions shape people's willingness to contribute to collective environmental goals, helping to clarify when inequality undermines cooperation and when it doesn't.</p>
+                  
+                  <p>Building on these insights, we develop a broader framework that directly tests the competing theoretical predictions about inequality's net effects on climate action. Our work aims to quantify whether inequality's potential benefits for emissions are outweighed by its corrosive effects on social cooperation, clarifying whether addressing inequality represents an obstacle to climate action or a prerequisite for it.</p>
+                  
+                  <p><strong>Related papers:</strong> Two experimental papers in progress.</p>
+                  
+                  <p><strong>Collaborators:</strong> 
+                    <a href="https://www.giuliandrighetto.com" target="_blank">Giulia Andrighetto</a>, 
+                    <a href="https://www.istc.cnr.it/en/people/eva-vriens" target="_blank">Eva Vriens</a>
+                  </p>
                 </div>
               </div>
             </li>
+
+            <!-- Project 4: Diffusion of Innovativeness -->
             <li>
               <div class="card">
                 <div class="card-body">
-                  <div class="title">Inequality and climate change</div>
-                  <p>In this project together with colleagues at <a href=https://labss.istc.cnr.it>LABSS</a>, we explore the relationships between inequality and CO2 emissions. Counterintuitively, inequality can have beneficial impact in fighting climate change which suggests that reducing simultaneously inequality and CO2 emissions may turn out to be difficult. We use pre-registered online experiments to we explore these questions. [More to come]</p>
-                  <!--<a href="/projects/project3.html" class="btn btn-sm z-depth-0" role="button" target="_blank">Read More</a>-->
+                  <div class="title">The Diffusion of Innovativeness in Science</div>
+                  
+                  <p>We investigate whether scientists can learn to become more innovative through collaboration. The question is not whether specific innovations spread through networks, but whether innovative capacity itself can be transmitted—whether working with highly innovative scientists makes one more innovative.</p>
+                  
+                  <p>This question has important implications. If innovative capacity spreads through collaboration, it represents a positive externality that could be collectively underexploited, since scientists tend to collaborate assortatively—the most innovative work with other highly innovative colleagues. Understanding this process could inform policies aimed at reshaping scientific collaboration to boost aggregate innovation.</p>
+                  
+                  <p>Our work combines empirical analysis using longitudinal bibliometric data with an original instrumental variable strategy to address the central identification challenge: disentangling learning effects from selection. We complement this with an agent-based model to explore macro-level consequences and simulate counterfactual collaboration patterns.</p>
+                  
+                  <p><strong>Related papers:</strong> One working paper.</p>
+                  
+                  <p><strong>Collaborator:</strong> 
+                    <a href="https://www.gemass.fr/member/sylvain-fontaine-gemass/" target="_blank">Sylvain Fontaine</a>
+                  </p>
                 </div>
               </div>
             </li>
+
           </ol>
         </div>
       </article>
@@ -117,15 +175,18 @@
 
   <!-- Footer -->
   <footer class="fixed-bottom">
-    <div class="container mt-0 text-center">
-      &copy; Copyright 2022 Yanshuai Cao. Powered by <a href="http://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme. Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
-      <br>Last updated: March 22, 2022.
+    <div class="container mt-0">
+      &copy; Copyright 2025 Lucas Sage.
+      Powered by <a href="http://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme.
+      Last updated: October 2025.
     </div>
   </footer>
 
   <!-- Scripts -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.4.4/umd/popper.min.js" integrity="sha512-eUQ9hGdLjBjY3F41CScH3UX+4JDSI9zXeroz7hJ+RteoCaY+GP/LDoM8AO+Pt+DRFw3nXqsjh9Zsts8hnYv8/A==" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha512-M5KW3ztuIICmVIhjSqXe01oV2bpe248gOxqmlcYrEzAvws7Pw3z6BK0iGbrwvdrUQUhi3eXgtxp5I8PDo9YfjQ==" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/js/mdb.min.js" integrity="sha512-Mug9KHKmroQFMLm93zGrjhibM2z2Obg9l6qFG2qKjXEXkMp/VDkI4uju9m4QKPjWSwQ6O2qzZEnJDEeCw0Blcw==" crossorigin="anonymous"></script>
 </body>
 
 </html>
